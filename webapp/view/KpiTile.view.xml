@@ -1,0 +1,22 @@
+<mvc:View controllerName="zcustkpitile01.controller.KpiTile" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.suite.ui.commons" xmlns:ui="sap.suite.ui.microchart" xmlns:core="sap.ui.core" displayBlock="true">
+     <GenericTile 
+  	 	id="zcustkpitile01"
+	 	press="onPress" 
+	 	header="{/config/display_title_text}" 
+	 	subheader="{/config/display_subtitle_text}" 
+	 	frameType="OneByOne">
+        <tileContent>
+        	<TileContent footer="{/config/display_info_text}">
+            	<content>
+                	<ui:ComparisonMicroChart size="Responsive" scale="M">
+						<ui:data>
+							<ui:ComparisonMicroChartData title="{/data/emp/month1}" value="{/data/emp/value1}" color="{/data/emp/color1}" />
+							<ui:ComparisonMicroChartData title="{/data/emp/month2}" value="{/data/emp/value2}" color="{/data/emp/color2}" />
+							<ui:ComparisonMicroChartData title="{/data/emp/month3}" value="{/data/emp/value3}" color="{/data/emp/color3}" />
+						</ui:data>
+					</ui:ComparisonMicroChart>
+				</content>
+			</TileContent>
+		</tileContent>
+	</GenericTile>
+</mvc:View>
