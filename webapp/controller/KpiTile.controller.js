@@ -86,7 +86,7 @@ sap.ui.define([
                             that.getView().addContent(oLinkControl);
                         } else {
                             that.getView().removeAllContent();
-                            var oTileControl = that.getView().getTileControl();
+                            var oTileControl = that.getView().byId("zcustkpitile01");
                             that.getView().addContent(oTileControl);
                         }
                         that.tileType = sType;
@@ -97,7 +97,7 @@ sap.ui.define([
             //if tileType is not set it means that we did not set any content
             //therefore we are setting the defualt value which is 'tile'
             if (!this.tileType){
-                var oTileControl = this.getView().getTileControl();
+                var oTileControl = this.getView().byId("zcustkpitile01");
                 this.getView().addContent(oTileControl);
                 this.tileType = "tile";
             }

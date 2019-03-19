@@ -10,9 +10,12 @@
             	<content>
                 	<ui:ComparisonMicroChart size="Responsive" scale="M">
 						<ui:data>
-							<ui:ComparisonMicroChartData title="{/data/emp/month1}" value="{/data/emp/value1}" color="{/data/emp/color1}" />
-							<ui:ComparisonMicroChartData title="{/data/emp/month2}" value="{/data/emp/value2}" color="{/data/emp/color2}" />
-							<ui:ComparisonMicroChartData title="{/data/emp/month3}" value="{/data/emp/value3}" color="{/data/emp/color3}" />
+							<!--<ui:ComparisonMicroChartData title="{/data/emp/month1}" value="{/data/emp/value1}" color="{/data/emp/color1}" />-->
+							<!--<ui:ComparisonMicroChartData title="{/data/emp/month2}" value="{/data/emp/value2}" color="{/data/emp/color2}" />-->
+							<!--<ui:ComparisonMicroChartData title="{/data/emp/month3}" value="{/data/emp/value3}" color="{/data/emp/color3}" />-->
+							<ui:ComparisonMicroChartData title="Jan" value="100" color="Good" />
+							<ui:ComparisonMicroChartData title="Feb" value="-20" color="Critical" />
+							<ui:ComparisonMicroChartData title="Mar" value="50" color="Neutral" />
 						</ui:data>
 					</ui:ComparisonMicroChart>
 				</content>
