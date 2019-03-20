@@ -514,13 +514,13 @@ sap.ui.define([
             	 ];
             var sName; 
             // Prepare emp object:
-            oResult.results = {};
-            for ( var i = 0; i < aKeys.length; i++){
-            	sName = aKeys[i];
-            	oResult.results[sName] = oResult[sName];
-            }
+            // oResult.results = {};
+            // for ( var i = 0; i < aKeys.length; i++){
+            // 	sName = aKeys[i];
+            // 	oResult.results[sName] = oResult[sName];
+            // }
             // Store the additional results back to emp
-            oDataToDisplay.emp = oResult.results;
+            oDataToDisplay.emp = oResult.results[0];
             // End Change <---------------------------
             // set data to display
             this.getView().getModel().setProperty("/data", oDataToDisplay);
